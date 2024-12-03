@@ -1,0 +1,19 @@
+@import '../../../../App.scss';
+
+.qty-toggler {
+    .toggle-btn {
+        max-height: 30px;
+
+        &__decrease {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            max-width: 20px;
+        }
+
+        &__increase {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            max-width: 20px;
+        }
+    }
+}

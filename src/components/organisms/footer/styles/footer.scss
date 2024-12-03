@@ -1,0 +1,22 @@
+@import '../../../../App.scss';
+
+.footer {
+    display: flex;
+    height: 60px;
+    background-color: $backgroud-gray;
+    justify-content: end;
+    box-shadow: 0 -1px 3px $light-gray;
+    width: 100%;
+    bottom: 0;
+
+    .copyright-text {
+        font-size: 12px;
+        font-weight: 600;
+        color: $black-gray;
+        padding: 20px 30px 0px 0px;
+    }
+
+    @include respond-between("mobile", "tablet") {
+        display: none;
+    }
+}

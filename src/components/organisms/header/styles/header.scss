@@ -1,0 +1,72 @@
+@import '../../../../App.scss';
+
+.top-header {
+    display: flex;
+    background-color: $dark-pink;
+    padding: 2px 40px 5px 40px;
+    justify-content: space-between;
+    align-items: center; 
+
+    .link-wrapper {
+        display: flex;
+    }
+
+    @include respond-between("mobile", "tablet") {
+        display: none;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: '100%';
+    border-bottom: 1px solid $light-gray;
+    padding: 10px 40px 15px 40px;
+    box-shadow: 0 4px 4px -5px $dark-gray;
+    background-color: $primary-pink;
+
+    .header-title {
+        width: fit-content;
+    }
+
+    .header-btn-wrapper {
+        display: flex;
+        margin-left: auto;
+
+        .icon-btn {
+            background-color: $white-pink;
+        }
+
+        .cart-count-indicator {
+            position: absolute;
+            padding: 3px 6px 3px 6px;
+            width: fit-content;
+            height: fit-content;
+            background-color: $ash-gray;
+            border-radius: 50%;
+            color: $pink-white;
+            font-weight: 600;
+            font-size: 12px;
+            top: 72%;
+            left: 65%;
+
+            @include respond-between("mobile", "tablet") {
+                padding: 4px 8px 4px 8px;
+                top: 60%;
+                left: 72%;
+            }
+        }
+
+        .logout-icon {
+            width: fit-content;
+            margin-top: 8px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    }
+
+    @include respond-between("mobile", "tablet") {
+        padding: 10px 20px 10px 20px;
+    }
+}

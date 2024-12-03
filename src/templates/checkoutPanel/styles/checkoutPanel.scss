@@ -1,0 +1,14 @@
+@import '../../../App.scss';
+
+.checkout-panel {
+    .checkout-panel-content {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        border-radius: 0px;
+        background-color: $primary-pink;
+    }
+}

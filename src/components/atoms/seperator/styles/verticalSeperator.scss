@@ -1,0 +1,12 @@
+@import '../../../../App.scss';
+
+.vertical-seperator {
+    width: 1px;
+    height: 100%;
+    background-color: $gray;
+    margin: 0px 5px 0px 5px;
+
+    &__dark {
+        background-color: $black-gray;
+    }
+}

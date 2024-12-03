@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+$primary-font: 'Noto Sans';
+
+$primary-pink: #e30047;
+$dark-pink: #c8003d;
+$pink-white: #fdffff;
+$dark-gray: #d3d3d3;
+$gray: #e0e0e0;
+$light-gray: #D0D0D0;
+$white-gray: #fcfcfc;
+$backgroud-gray: #e9e9e9;
+$ash-gray: #808080;
+$container-gray: #f5f3f3;
+$navy-blue: #1a2233;
+$text-black: #14171a;
+$text-gray: #9ca0a3;
+$black-gray:  #303234;
+$white: #FFFFFF;
+$white-pink: #fce4e4;
+$black: #000000;
+
+$breakpoints: (
+  "mobile": 320px,     // Mobile devices
+  "tablet": 768px,     // Tablets
+  "medium": 900px,     // Medium
+  "laptop": 1024px,    // Laptops
+  "desktop": 1280px    // Desktops
+);
+
+// mixin for apply media query styles
+@mixin respond-between($min, $max) {
+    @media (min-width: map-get($breakpoints, $min)) and (max-width: map-get($breakpoints, $max)) {
+      @content;
+    }
+}
+

@@ -1,0 +1,33 @@
+@import '../../../App.scss';
+
+.filter-panel {
+    background-color: $pink-white;
+    padding: 0px 100px 0px 100px;
+    border-bottom: 1px solid $light-gray;
+    box-shadow: 0 4px 4px -5px $dark-gray;
+
+    .filter-container {
+        padding: 20px 0px 20px 0px;
+
+        .search-btn {
+            height: 40px;
+            border-radius: 0px;
+            background-color: $primary-pink;
+            color: $pink-white;
+
+            @include respond-between("mobile", "tablet") {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+
+        @include respond-between("mobile", "tablet") {
+            padding: 10px 20px 10px 20px;
+            width: 100%;
+        }
+    }
+
+    @include respond-between("mobile", "tablet") {
+        padding: 10px 10px 10px 10px;
+    }
+}

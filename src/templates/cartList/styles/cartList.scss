@@ -1,0 +1,15 @@
+@import '../../../App.scss';
+
+.cart-list {
+    background-color: $pink-white;
+    margin: 20px 0px 20px 20px;
+    padding: 20px;
+
+    .list-wrapper {
+        padding-top: 20px;
+    }
+
+    @include respond-between("mobile", "tablet") {
+        margin: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../App.scss';
+
+.shopping-cart {
+    background-color: $container-gray; 
+    
+    .checkout-container {
+        background-color: $pink-white;
+        margin: 20px 20px 20px 0px;
+        padding: 20px;
+
+        @include respond-between("mobile", "tablet") {
+            margin: 20px;
+        }
+    }
+}

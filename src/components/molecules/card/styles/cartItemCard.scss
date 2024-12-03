@@ -1,0 +1,55 @@
+@import '../../../../App.scss';
+
+.cart-item-card {
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    text-align: center;
+
+    .card-image-wrapper {
+        margin: 15px 0px 15px 0px;
+        padding: 10px;
+        border-style: double;
+        border-radius: 10px;
+        border: 2px solid rgba(0,0,0,0.12);
+        box-shadow: 0 3px 2px $light-gray;
+
+        .card-image {
+            width: 50%;
+            height: 100px;
+            object-fit: cover;
+        }
+    }
+
+    .cart-item-body {
+        text-align: left;
+        margin: 20px 20px 20px 0px;
+
+        .cart-item-action {
+            display: flex;
+            margin-top: 10px;
+
+            .cart-item-action-seperator {
+                margin: 5px 10px 5px 10px;
+                height: 20px;
+            }
+
+            .remove-btn {
+                margin-top: -5px;
+                background-color: $primary-pink;
+
+                .icon {
+                    color: $pink-white;
+                }
+            }
+        }
+    }
+
+    .cart-item-subtotal {
+        display: flex;
+        margin: 20px 0px 20px 0px;
+
+        @include respond-between("mobile", "tablet") {
+            margin-top: 30px;
+            margin: 0px 0px 20px 0px;
+         }
+    }
+}

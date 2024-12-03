@@ -1,0 +1,30 @@
+@import '../../../../App.scss';
+
+.btn {
+    cursor: pointer;
+   
+    &__search {
+        background-color: $light-gray !important;
+        border-radius: 0px !important;
+
+        &:hover {
+            background-color: $gray !important;
+        }
+    }
+
+    &__favourite {
+        background-color: $light-red !important;
+
+        &:hover {
+            background-color: $red !important;
+        }
+    }
+
+    &__remove {
+        background-color: $red !important;
+
+        &:hover {
+            background-color: $dark-red !important;
+        }
+    }
+}

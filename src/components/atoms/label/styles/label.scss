@@ -1,0 +1,144 @@
+@import '../../../../App.scss';
+
+.label {
+    font-family: $primary-font;
+   
+    &__header {
+        font-size: 22px;
+        font-weight: 500;
+        color: $pink-white;
+        cursor: pointer;
+    }
+
+    &__topHeader {
+        font-size: 13px;
+        font-weight: 500;
+        color: $pink-white;
+    }
+
+    &__topLink {
+        font-size: 13px;
+        font-weight: 500;
+        color: $pink-white;
+    }
+
+    &__siteLink {
+        font-size: 13px;
+        font-weight: 500;
+        color: $black-gray;
+    }
+
+    &__infoTitle {
+        font-size: 13px;
+        font-weight: 500;
+        color: $text-black;
+    }
+
+    &__infoDesc {
+        font-size: 12px;
+        font-weight: 500;
+        color: $text-gray;
+    }
+
+    &__loginFormTitle {
+        font-size: 25px;
+        font-weight: 500;
+        color: $text-black;
+        padding-bottom: 10px;
+    }
+
+    &__loginFormDesc {
+        font-size: 12px;
+        font-weight: 500;
+        color: $text-gray;
+        padding-bottom: 5px;
+    }
+
+    &__cardHeader {
+        font-size: 13px;
+        font-weight: 600;
+        color: $black;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+
+    &__productPrice {
+        font-size: 17px;
+        font-weight: 600;
+        color: $primary-pink;
+    }
+
+    &__productDesc {
+        font-size: 12px;
+        font-weight: 500;
+        color: $black;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+
+    &__productCategory {
+        font-size: 10px;
+        font-weight: 500;
+        color: $black;
+        text-transform: uppercase;
+    }
+
+    &__cartListHeader {
+        font-size: 25px;
+        font-weight: 500;
+        color: $black-gray;
+    }
+
+    &__cartItemTitle {
+        font-size: 18px;
+        font-weight: 500;
+        color: $black-gray;
+    }
+    
+    &__cartItemPrice {
+        font-size: 13px;
+        font-weight: 500;
+        color: $black-gray;
+        padding-top: 10px;
+    }
+
+    &__cartItemSubTotal {
+        font-size: 17px;
+        font-weight: 600;
+        color: $navy-blue;
+    }
+
+    &__cartItemSubTotalPrice {
+        font-size: 17px;
+        font-weight: 600;
+        color: $navy-blue;
+        padding-left: 20px;
+    }
+
+    &__cartItemRemove {
+        font-size: 12px;
+        font-weight: 600;
+        color: $dark-pink;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    
+    &__cartTotal {
+        font-size: 15px;
+        font-weight: 500;
+        color: $navy-blue;
+        padding-right: 20px;
+    }
+
+    &__cartTotalPrice {
+        font-size: 22px;
+        font-weight: 600;
+        color: $navy-blue;
+    }
+
+}

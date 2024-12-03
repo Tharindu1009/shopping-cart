@@ -1,0 +1,14 @@
+@import '../../../../App.scss';
+
+.info-card {
+    display: flex;
+    padding: 5px 5px 10px 5px;
+
+    .info-card-detail {
+        padding-top: 7px;
+
+        .info-title {
+            margin-bottom: 5px;
+        }
+    }
+}

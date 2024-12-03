@@ -1,0 +1,14 @@
+@import '../../../../App.scss';
+
+.textBox {
+    background-color: $white;
+    margin-right: 10px !important;
+    
+    .MuiOutlinedInput-root {
+        border-radius: 0px !important;
+    }
+
+    @include respond-between("mobile", "tablet") {
+        width: 100%;
+    }
+}

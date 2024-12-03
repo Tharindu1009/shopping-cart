@@ -1,0 +1,90 @@
+@import '../../../../App.scss';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 12px;
+    height: 350px;
+    border-right: 1px solid rgba(0,0,0,0.12);
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    flex: 1 0 300px;
+    overflow: hidden;
+    transition: all 250ms ease-in-out;
+    
+    .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20%;
+        padding: 0px 40px 0px 40px;
+    }
+
+    .card-image-container {
+        height: 40%;
+        text-align: center;
+
+        .card-image {
+            width: 50%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .cart-icon-wrapper {
+            position: absolute;
+            margin-top: -30px;
+            margin-left: 220px;
+
+            .icon-btn {
+                border-radius: 50px !important;
+                background-color: $primary-pink;
+                color: $white-pink;
+            }
+
+            @include respond-between("mobile", "tablet") {
+                margin-left: 75%;
+            }
+
+            @include respond-between("mediam", "laptop") {
+                margin-left: 60%;
+            }
+        }
+    }
+
+    .card-content {
+        display: contents;
+        padding: 5px;
+        border-radius: 12px;
+        height: 32%;
+
+        .description {
+            text-align: left;
+            margin: 30px 10px 0px 10px;
+        }
+
+        .category {
+            width: fit-content;
+            margin: 5px 10px 0px 10px;
+            background-color: $light-gray;
+            padding: 2px 8px 2px 8px;
+        }
+
+        .cart-action {
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            margin-top: auto;
+
+            .price {
+                align-items: left;
+                justify-content: left;
+            }
+
+            .qty-toggle-wrapper {
+                align-items: right;
+                justify-content: right;
+            }
+        }
+    }
+}

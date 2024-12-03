@@ -13,11 +13,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Run unit test files
-
-You can execute all unit tests using below command.
-### `npm test run`
-
 # Screenshots
 
 Login Page (Large Screen View)
